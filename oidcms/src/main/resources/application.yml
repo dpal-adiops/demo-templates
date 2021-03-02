@@ -1,0 +1,23 @@
+server:
+  port: 8000
+  
+logging:
+  level:
+    org.springframework.web.client.RestTemplate: DEBUG
+
+spring:  application:     name: oidcms
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 91096797510694-s00a9h0i8s8m069re8ermm9bmtq9eo09.apps.googleusercontent.com
+            client-secret: eqBk2_IjTvosjd89duqC1lk2N
+
+secret:
+   key: topsecret
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/   
